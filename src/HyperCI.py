@@ -373,10 +373,10 @@ def experiment_ite(args, features, treatments, outcomes, Y_true, hyperedge_index
         results_all['pehe'].append(eval_results_tst['pehe'])
         results_all['ate'].append(eval_results_tst['ate'])
 
-    results_all['average_pehe'] = np.mean(np.array(results_all['pehe'], dtype=np.float))
-    results_all['std_pehe'] = np.std(np.array(results_all['pehe'], dtype=np.float))
-    results_all['average_ate'] = np.mean(np.array(results_all['ate'], dtype=np.float))
-    results_all['std_ate'] = np.std(np.array(results_all['ate'], dtype=np.float))
+    results_all['average_pehe'] = np.mean(np.array(results_all['pehe'], dtype=float))
+    results_all['std_pehe'] = np.std(np.array(results_all['pehe'], dtype=float))
+    results_all['average_ate'] = np.mean(np.array(results_all['ate'], dtype=float))
+    results_all['std_ate'] = np.std(np.array(results_all['ate'], dtype=float))
 
     print("============== Overall experiment results =========================")
     for k in results_all:
@@ -470,10 +470,10 @@ def experiment_hypersize(args, features, treatments, outcomes, Y_true, hyperedge
 
         # break  # !!!!!!!!!!!!!
 
-    results_all['average_pehe'] = np.mean(np.array(results_all['pehe'], dtype=np.float))
-    results_all['std_pehe'] = np.std(np.array(results_all['pehe'], dtype=np.float))
-    results_all['average_ate'] = np.mean(np.array(results_all['ate'], dtype=np.float))
-    results_all['std_ate'] = np.std(np.array(results_all['ate'], dtype=np.float))
+    results_all['average_pehe'] = np.mean(np.array(results_all['pehe'], dtype=float))
+    results_all['std_pehe'] = np.std(np.array(results_all['pehe'], dtype=float))
+    results_all['average_ate'] = np.mean(np.array(results_all['ate'], dtype=float))
+    results_all['std_ate'] = np.std(np.array(results_all['ate'], dtype=float))
 
     print("============== Overall experiment results =========================")
     for k in results_all:
